@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>Diffusion Lens</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,18 +52,18 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">A Dataset for Metaphor Detection in Early Medieval Hebrew Poetry</h1>
+            <h1 class="title is-1 publication-title">Diffusion Lens: Interpreting Text Encoders in Text-to-Image Pipelines</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
                 <a href="https://tokeron.github.io/web/" target="_blank">Michael Toker</a>,</span>
                 <span class="author-block">
-                  <a href="https://csaws.cs.technion.ac.il/~omishali/" target="_blank">Oren Mishali</a>,</span>
+                  <a href="https://orgadhadas.github.io/" target="_blank">Hadas Orgad</a>,</span>
                   <span class="author-block">
-                    <a href="https://www.openu.ac.il/en/personalsites/ofirmanor.aspx" target="_blank">Ophir Münz-Manor</a>,
+                    <a href="https://venturamor.github.io/" target="_blank">Mor Ventura</a>,
                   </span>
                   <span class="author-block">
-                    <a href="https://benny.cs.technion.ac.il/" target="_blank">Benny Kimelfeld</a>,
+                    <a href="https://www.linkedin.com/in/dana-arad/" target="_blank">Dana Arad</a>,
                   </span>
                   <span class="author-block">
                     <a href="https://belinkov.com/" target="_blank">Yonatan Belinkov</a>
@@ -71,7 +71,7 @@
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Technion<br>EACL 2024</span>
+                    <span class="author-block">Technion - Israel Institute of Technology<br></span>
                     <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
@@ -89,7 +89,7 @@
                     </span> -->
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/metaphor.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -97,11 +97,11 @@
                       </span>
                       <span>Paper</span>
                     </a>
-                  </span>
+                    </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/technion-cs-nlp/metaphor-detection" target="_blank"
+                    <a href="https://github.com/tokeron/DiffusionLens" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -121,32 +121,32 @@
 
 
                   <!-- Model  Link -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a href="https://huggingface.co/tokeron/BEREL_Piyyut" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-cog"></i>
                     </span>
-                    <span>Model</span>
+                    <span>Model</span> -->
 
                   <!-- Dataset  Link -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a href="https://huggingface.co/datasets/tokeron/Piyyut" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-database"></i>
                     </span>
-                    <span>Dataset</span>
+                    <span>Dataset</span> -->
 
                   
                 <!-- Demo  Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="http://figureout.cs.technion.ac.il/" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <i class="fas fa-play-circle"></i> <!-- for play circle icon -->
+                    <i class="fas fa-play-circle"></i>
                   </span>
-                  <span>Demo</span>
+                  <span>Demo</span> -->
 
 
                 </a>
@@ -185,9 +185,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            There is a large volume of late antique and medieval Hebrew texts. They represent a crucial linguistic and cultural bridge between Biblical and modern Hebrew. 
-            Poetry is prominent in these texts and one of its main characteristics is the frequent use of metaphor. Distinguishing figurative and literal language use is a major task for scholars of the Humanities, especially in the fields of literature, linguistics, and hermeneutics.
-            This paper presents a new, challenging dataset of late antique and medieval Hebrew poetry with expert annotations of metaphor, as well as some baseline results, which we hope will facilitate further research in this area.          </p>
+            Text-to-image diffusion models (T2I) use a latent representation of a text prompt to guide the image generation process. However, the process by which the encoder produces the text representation is unknown. We propose the Diffusion Lens, a method for analyzing the text encoder of T2I models by generating images from its intermediate representations. Using the Diffusion Lens, we perform an extensive analysis of two recent T2I models. Exploring compound prompts, we find that complex scenes describing multiple objects are composed progressively and more slowly compared to simple scenes;  Exploring knowledge retrieval, we find that representation of uncommon concepts requires further computation compared to common concepts, and that knowledge retrieval is gradual across layers. Overall, our findings provide valuable insights into the text encoder component in T2I pipelines.
+          </p>
         </div>
       </div>
     </div>
@@ -293,23 +292,54 @@
 <!-- End video carousel -->
 
 
+<!-- # add an image and a text to the page.
+This is te text: Visualization of the text encoder's intermediate representations using the Diffusion Lens. 
+At each layer of the text encoder (in blue), the Diffusion Lens takes the full hidden state, passes it through the final layer norm, and feeds it into the diffusion model.
+this is the image: "static/images/intro_fig_giraffe.png" -->
+
+<!-- Image and Text Section -->
+<section class="section">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Diffusion Lens</h2>
+    <figure class="image">
+      <!-- Add a style attribute to the img tag to make it smaller -->
+      <img src="static/images/intro_fig_giraffe.png" alt="Giraffe" style="width: 50%; height: auto;">
+    </figure>
+    <p>Visualization of the text encoder's intermediate representations using the Diffusion Lens. 
+    At each layer of the text encoder (in blue), the Diffusion Lens takes the full hidden state, passes it through the final layer norm, and feeds it into the diffusion model.</p>
+  </div>
+</section>
+<!-- End Image and Text Section -->
 
 
+<!-- Image and Text Section -->
+<section class="section">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Insights from Diffusion Lens</h2>
+    <figure class="image">
+      <!-- Add a style attribute to the img tag to make it smaller -->
+      <img src="static/images/examples.png" alt="Examples" style="width: 100%; height: auto;">
+    </figure>
+    <p><strong>Conceptual combination</strong> (left): early layers often act as a "bag of concepts", lacking relational information which emerges in later layers. <strong>Memory Retrieval</strong> (right): uncommon concepts gradually evolve over layers, taking longer to generate compared to common concepts.</p>
+  </div>
+</section>
+<!-- End Image and Text Section -->
 
 
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
+<!-- Image and Text Section -->
+<section class="section">
+  <div class="container is-max-desktop content">
+    <h2 class="title">All Layers Visualization</h2>
+    <figure class="image">
+      <!-- Add a style attribute to the img tag to make it smaller -->
+      <img src="static/images/all_layers.png" alt="All Layers" style="width: 100%; height: auto;">
+    </figure>
+    <p>Images generated from all layers using Diffusion Lens.</p>
+  </div>
+</section>
+<!-- End Image and Text Section -->
 
-      <iframe  src="static/pdfs/poster.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
+
 
 
 <!--BibTex citation -->

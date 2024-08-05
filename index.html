@@ -143,8 +143,10 @@
 <!-- Add GIF here -->
 <div class="gif-container" style="margin-top: 20px; text-align: center;">
   <img src="static/videos/astronaut_dog_sd3.gif" alt="Astronaut Dog" style="display: block; margin-left: auto; margin-right: auto;">
-  <div style="width: 80%; margin: 0 auto;">
-    <p>Diffusion Lens with Stable Diffusion 3: Images generated from different intermediate representations of the text encoder using our methods. Prompt: "An image of a dog floating in space holding a green bone."</p>
+  <div class="content has-text-justified">
+    <p>
+      Diffusion Lens with Stable Diffusion 3: Images generated from different intermediate representations of the text encoder using our methods. \n Prompt: "An image of a dog floating in space holding a green bone."
+    </p>
   </div>
 </div>
 
@@ -177,9 +179,9 @@
             Text-to-image diffusion models (T2I) use a latent representation of a text prompt to guide the image generation process. However, the process by which the encoder produces the text representation is unknown. We propose the Diffusion Lens, a method for analyzing the text encoder of T2I models by generating images from its intermediate representations. Using the Diffusion Lens, we perform an extensive analysis of two recent T2I models. Exploring compound prompts, we find that complex scenes describing multiple objects are composed progressively and more slowly compared to simple scenes; Exploring knowledge retrieval, we find that representation of uncommon concepts requires further computation compared to common concepts, and that knowledge retrieval is gradual across layers. Overall, our findings provide valuable insights into the text encoder component in T2I pipelines.
           </p>
           <!-- Add GIF here -->
-          <div style="text-align: center; margin-top: 20px;">
-            <img src="static/videos/astronaut_dog_sd3.gif" alt="Astronaut Dog" style="width: 80%; height: auto;">
-          </div>
+          <!-- <div style="text-align: center; margin-top: 20px;"> -->
+            <!-- <img src="static/videos/astronaut_dog_sd3.gif" alt="Astronaut Dog" style="width: 80%; height: auto;"> -->
+          <!-- </div> -->
         </div>
       </div>
     </div>

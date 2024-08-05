@@ -71,7 +71,7 @@
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block">Technion - Israel Institute of Technology<br></span>
+            <span class="author-block">Technion - Israel Institute of Technology<br>ACL 2024</span>
             <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
           </div>
 
@@ -132,16 +132,6 @@
                 </a>
               </span>
             </div>
-
-            <!-- Add GIF here -->
-            <div class="gif-container" style="margin-top: 20px;">
-              <img src="static/videos/astronaut_dog_sd3.gif" alt="Astronaut Dog">
-              <p>Diffusion Lens with Stable Diffusion 3: Images generated from different intermediate representations of the text encoder using our methods. Prompt: "An image of a dog floating in space holding a green bone."</p>
-            </div>
-
-            <!-- Embed Hugging Face Demo -->
-            <!-- <div class="huggingface-demo" style="margin-top: 20px;"> -->
-              <!-- <iframe src="https://huggingface.co/spaces/tokeron/DiffusionLens" width="100%" height="500" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
             </div>
           </div>
         </div>
@@ -185,6 +175,32 @@
   </div>
 </section>
 <!-- End paper abstract -->
+
+<!-- Image and Text Section -->
+<section class="section">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Diffusion Lens</h2>
+    <figure class="image">
+      <!-- Add a style attribute to the img tag to make it smaller -->
+      <img src="static/videos/diffusionLens.gif" alt="Diffusion Lens"
+    </figure>
+    <p>Visualization of the text encoder's intermediate representations using the Diffusion Lens. 
+    At each layer of the text encoder, the Diffusion Lens takes the full hidden state, passes it through the final layer norm, and feeds it into the diffusion model.</p>
+  </div>
+</section>
+<!-- End Image and Text Section -->
+
+<!-- Add GIF here -->
+<!-- <div class="gif-container" style="margin-top: 20px;"> -->
+  <!-- <img src="static/videos/diffusionLens.gif" alt="Astronaut Dog"> -->
+  <!-- <p>Diffusion Lens with Stable Diffusion 3: Images generated from different intermediate representations of the text encoder using our methods. Prompt: "An image of a dog floating in space holding a green bone."</p> -->
+<!-- </div> -->
+
+<!-- Add GIF here -->
+<div class="gif-container" style="margin-top: 20px;">
+  <img src="static/videos/astronaut_dog_sd3.gif" alt="Astronaut Dog">
+  <p>Diffusion Lens with Stable Diffusion 3: Images generated from different intermediate representations of the text encoder using our methods. Prompt: "An image of a dog floating in space holding a green bone."</p>
+</div>
 
 
 <!-- Image carousel -->
@@ -289,19 +305,6 @@ This is te text: Visualization of the text encoder's intermediate representation
 At each layer of the text encoder (in blue), the Diffusion Lens takes the full hidden state, passes it through the final layer norm, and feeds it into the diffusion model.
 this is the image: "static/images/intro_fig_giraffe.png" -->
 
-<!-- Image and Text Section -->
-<section class="section">
-  <div class="container is-max-desktop content">
-    <h2 class="title">Diffusion Lens</h2>
-    <figure class="image">
-      <!-- Add a style attribute to the img tag to make it smaller -->
-      <img src="static/images/intro_fig_giraffe.png" alt="Giraffe" style="width: 50%; height: auto;">
-    </figure>
-    <p>Visualization of the text encoder's intermediate representations using the Diffusion Lens. 
-    At each layer of the text encoder (in blue), the Diffusion Lens takes the full hidden state, passes it through the final layer norm, and feeds it into the diffusion model.</p>
-  </div>
-</section>
-<!-- End Image and Text Section -->
 
 
 <!-- Image and Text Section -->
